@@ -1,9 +1,14 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { Container } from '@chakra-ui/react'
+import { WithSubnavigation } from '@/app/components/navigation'
 
 export default function Home() {
   return (
+    <>
+         <WithSubnavigation />
+    
+ 
     <Container maxW='2xl' bg='blue.600' centerContent>
     <main>
       <div className={styles.description}>
@@ -94,5 +99,6 @@ export default function Home() {
       </div>
     </main>
     </Container>
+    </>
   )
 }
